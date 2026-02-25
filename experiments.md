@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Experiments & Results"
+title: "Simulations and Experiments"
 nav_order: 3
 ---
 

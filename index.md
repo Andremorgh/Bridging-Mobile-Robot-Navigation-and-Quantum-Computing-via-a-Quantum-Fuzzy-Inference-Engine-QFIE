@@ -13,17 +13,17 @@ nav_order: 1
 ## Video overview (method + simulations + real-robot experiments)
 > Replace `ID_VIDEO` with your YouTube (or Vimeo) embed ID/link.
 
-<iframe width="900" height="506"
+<!-- <iframe width="900" height="506"
 src="https://www.youtube.com/embed/ID_VIDEO"
 title="QFIE Paper Report – Video Overview"
 frameborder="0"
-allowfullscreen></iframe>
+allowfullscreen></iframe> -->
 
-<!-- Option B (MP4 stored in the repo — recommended only for small files)
+Option B (MP4 stored in the repo — recommended only for small files)
 <video controls width="900">
-  <source src="{{ '/assets/video/qfie_demo.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/video/qfie_navigation.mp4' | relative_url }}" type="video/mp4">
 </video>
--->
+
 
 ---
 
@@ -43,35 +43,17 @@ Simulation and real-world experiments on a four-wheeled rover demonstrate that t
 ---
 
 ## Results at a glance (key numbers)
+
 | Block | What it demonstrates | Headline result |
 |---|---|---|
-| Adaptive sampling | makes LUT acquisition feasible under cloud/NISQ constraints | Dense mapping: **1800** queries vs adaptive: **62** (**−96.5%**) |
-| Cloud feasibility | practical acquisition time under a free-tier quota | **t_query ≈ 6 s**, **T_dense ≈ 180 min** vs **T_opt ≈ 6.2 min** (within **10 min/month**) |
-| Device-calibrated noisy simulator (FakeTorino) vs ideal | quantitative distortion under device-like noise | v: MAE **0.063 m/s** (RMSE 0.068, Max 0.200); ω: MAE **1.397 rad/s** (RMSE 1.488, Max 3.017) |
-| Real QPU (IBM torino) vs noisy–sparse | hardware drift while preserving qualitative decisions | ω: MAE **0.244 rad/s** (RMSE 0.293, Max 0.730), **sign coherence 99.31%**; v: MAE **0.020 m/s** (RMSE 0.022, Max 0.0397) |
-| Closed-loop simulation (real-QPU LUTs) | task-level viability in the full pipeline | **12/14 successful runs = 85.7%**; failures match identified corner cases |
-| Physical rover experiments | end-to-end integration on real hardware | **4/6** successful static runs (5 cm criterion); tighter **2.5 cm docking** succeeded (≈ **+15% time**); dynamic obstacle injection remained stable |
+| Adaptive sampling | Makes LUT acquisition feasible under cloud/NISQ constraints | Dense mapping: **1800** queries vs adaptive: **62** (**−96.5%**) |
+| Cloud feasibility | Practical acquisition time under a free-tier quota | **t_query ≈ 6 s**, **T_dense ≈ 180 min** vs **T_opt ≈ 6.2 min** (within **10 min/month**) |
+| FakeTorino vs ideal | Quantitative distortion under device-like noise | v: MAE **0.063 m/s** (RMSE 0.068, Max 0.200); ω: MAE **1.397 rad/s** (RMSE 1.488, Max 3.017) |
+| Real QPU vs noisy–sparse | Hardware drift while preserving qualitative decisions | ω: MAE **0.244 rad/s** (RMSE 0.293, Max 0.730), **sign coherence 99.31%**; v: MAE **0.020 m/s** (RMSE 0.022, Max 0.0397) |
+| Closed-loop simulation | Task-level viability in the full pipeline | **12/14 successful runs = 85.7%** |
+| Physical rover experiments | End-to-end integration on real hardware | **4/6** successful static runs (5 cm); **2.5 cm docking** succeeded (~**+15% time**); dynamic obstacle injection stable |
 
-**Interpretation (one line):** the contribution is not “quantum is faster today”, but a validated pathway for deploying a **quantum-derived**, interpretable controller within real-time robotics constraints.
-
----
-
-## Suggested figures (place in `assets/img/`)
-Keep the homepage lean: 2–3 figures are enough.
-
-- Pipeline overview (perception → LUT query → control)
-- Real-QPU control surfaces with adaptive anchor points
-- One representative physical run (telemetry/path)
-
-Example links (rename files as you like):
-
-![Pipeline overview]({{ '/assets/img/pipeline.png' | relative_url }})
-
-![Real-QPU control surfaces (adaptive sampling)]({{ '/assets/img/real_qpu_surfaces.png' | relative_url }})
-
-![Physical experiment: telemetry and reconstructed path]({{ '/assets/img/physical_telemetry.png' | relative_url }})
-
----
+**Interpretation:** the contribution is not “quantum is faster today”, but a validated pathway for deploying a **quantum-derived**, interpretable controller within real-time robotics constraints.
 
 ## Links
 - Paper PDF: *(add link)*
