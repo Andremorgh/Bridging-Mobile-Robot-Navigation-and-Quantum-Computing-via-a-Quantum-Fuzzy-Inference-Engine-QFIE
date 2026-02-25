@@ -1,14 +1,18 @@
-title: "Report – Paper XYZ"
-description: "Riassunto, analisi e risultati"
+title: "Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine"
+description: "Paper report: QFIE for mobile-robot navigation under NISQ constraints"
 theme: minima
 
-# Se il repo è https://TUOUSERNAME.github.io/paper-report/
-# allora baseurl deve essere /paper-report
-baseurl: "/paper-report"
-url: "https://TUOUSERNAME.github.io"
+# IMPORTANTISSIMO per project page:
+# se l'URL è https://TUOUSERNAME.github.io/qfie-paper-report/
+baseurl: "/qfie-paper-report"
+url: "https://github.com/Andremorgh/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
 
-# (opzionale) per controllare i link nel menu (vedi sezione menu)
-# Per Minima 2.x:
+# Menu: compatibile con molte versioni di Minima
 header_pages:
   - method.md
-  - results.md
+  - experiments.md
+
+minima:
+  nav_pages:
+    - method.md
+    - experiments.md
