@@ -3,54 +3,76 @@ layout: page
 title: "Paper Report"
 ---
 
-# Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine
+# Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine (QFIE)
 
-## Abstract
+**Core message:** QFIE integrates *quantum-derived inference* into a mobile-robot navigation stack **without** executing quantum hardware in the closed loop. Quantum inference is run **offline** to characterise **control surfaces**; these are then deployed onboard as **lookup tables (LUTs)** that can be queried in real time.
+
+---
+
+## Video overview (method + simulations + real-robot experiments)
+> Replace `ID_VIDEO` with your YouTube (or Vimeo) embed ID/link.
+
+<iframe width="900" height="506"
+src="https://www.youtube.com/embed/ID_VIDEO"
+title="QFIE Paper Report – Video Overview"
+frameborder="0"
+allowfullscreen></iframe>
+
+<!-- Option B (MP4 stored in the repo — recommended only for small files)
+<video controls width="900">
+  <source src="{{ '/assets/video/qfie_demo.mp4' | relative_url }}" type="video/mp4">
+</video>
+-->
+
+---
+
+## Abstract (from the paper)
 Quantum computing holds the theoretical potential to transcend classical limitations in processing high-dimensional state spaces and solving combinatorial optimisation problems. However, its practical integration into robotics remains challenging, particularly under Noisy Intermediate-Scale Quantum (NISQ) constraints and the conceptual shift imposed by quantum programming models. In this work, we investigate the Quantum Fuzzy Inference Engine (QFIE) as an interpretable and deployment-oriented framework for embedding quantum inference within a mobile-robot navigation stack. QFIE leverages fuzzy logic as a human-readable interface between quantum computation and classical control design, enabling structured policy synthesis while preserving compatibility with existing robotic architectures. Although present wall-clock execution times are dominated by cloud access latency and hardware overhead, QFIE retains a provable exponential advantage in computational complexity over its classical fuzzy inference counterpart. Accordingly, rather than claiming immediate runtime superiority in this low-dimensional instantiation, this work establishes a concrete engineering and validation pathway for complexity-scalable quantum-derived inference. Quantum inference is therefore executed offline on a superconducting IBM backend to characterise the control surfaces, which are subsequently deployed onboard to meet closed-loop actuation constraints.
 
 Simulation and real-world experiments on a four-wheeled rover demonstrate that the resulting controller can be reliably integrated into a physical robotic platform despite current NISQ limitations. To the best of our knowledge, this represents one of the first demonstrations of quantum computations executed on real IBM quantum hardware being experimentally integrated into the control pipeline of a real mobile robot.
 
 ---
 
-## What this report covers
-- **Problem framing**: why navigation benefits from scalable inference / optimisation
-- **QFIE**: fuzzy interface + quantum inference pipeline
-- **Integration**: offline quantum → deployed onboard control surfaces
-- **Evidence**: simulation + real rover experiments
-- **Limits & takeaways**: what is “advantage” here, and what remains NISQ-limited
-
-## Key idea (one paragraph)
-QFIE uses **fuzzy logic as an interpretable layer** to define rules and membership functions, but evaluates the inference with a **quantum procedure** (run offline on IBM superconducting hardware), producing **control surfaces** that can be deployed onboard for real-time closed-loop control.
+## What this report focuses on (high signal only)
+- The **engineering rationale**: why quantum must be offline today, and how LUT deployment preserves real-time control.
+- The **minimum method** needed to understand the results (QFIE → surfaces → LUT).
+- The **results that matter**: noise impact on surfaces, adaptive sampling savings, simulation success, real-robot validation.
+- A candid view of **failure modes** and what would be required to address them.
 
 ---
 
-## Video demo
-### Option A (recommended): YouTube/Vimeo embed
-<iframe width="800" height="450"
-src="https://www.youtube.com/embed/ID_VIDEO"
-title="QFIE Demo"
-frameborder="0"
-allowfullscreen></iframe>
+## Results at a glance (key numbers)
+| Block | What it demonstrates | Headline result |
+|---|---|---|
+| Adaptive sampling | makes LUT acquisition feasible under cloud/NISQ constraints | Dense mapping: **1800** queries vs adaptive: **62** (**−96.5%**) |
+| Cloud feasibility | practical acquisition time under a free-tier quota | **t_query ≈ 6 s**, **T_dense ≈ 180 min** vs **T_opt ≈ 6.2 min** (within **10 min/month**) |
+| Device-calibrated noisy simulator (FakeTorino) vs ideal | quantitative distortion under device-like noise | v: MAE **0.063 m/s** (RMSE 0.068, Max 0.200); ω: MAE **1.397 rad/s** (RMSE 1.488, Max 3.017) |
+| Real QPU (IBM torino) vs noisy–sparse | hardware drift while preserving qualitative decisions | ω: MAE **0.244 rad/s** (RMSE 0.293, Max 0.730), **sign coherence 99.31%**; v: MAE **0.020 m/s** (RMSE 0.022, Max 0.0397) |
+| Closed-loop simulation (real-QPU LUTs) | task-level viability in the full pipeline | **12/14 successful runs = 85.7%**; failures match identified corner cases |
+| Physical rover experiments | end-to-end integration on real hardware | **4/6** successful static runs (5 cm criterion); tighter **2.5 cm docking** succeeded (≈ **+15% time**); dynamic obstacle injection remained stable |
 
-### Option B: MP4 hosted in the repo (ok for small files)
-<!--
-<video controls width="800">
-  <source src="{{ site.baseurl }}/assets/video/demo.mp4" type="video/mp4">
-</video>
--->
+**Interpretation (one line):** the contribution is not “quantum is faster today”, but a validated pathway for deploying a **quantum-derived**, interpretable controller within real-time robotics constraints.
 
 ---
 
-## Figures
-Add your images in `assets/img/` and reference them like this:
+## Suggested figures (place in `assets/img/`)
+Keep the homepage lean: 2–3 figures are enough.
 
-![System overview]({{ site.baseurl }}/assets/img/system_overview.png)
+- Pipeline overview (perception → LUT query → control)
+- Real-QPU control surfaces with adaptive anchor points
+- One representative physical run (telemetry/path)
 
-![Control surface example]({{ site.baseurl }}/assets/img/control_surface.png)
+Example links (rename files as you like):
+
+![Pipeline overview]({{ '/assets/img/pipeline.png' | relative_url }})
+
+![Real-QPU control surfaces (adaptive sampling)]({{ '/assets/img/real_qpu_surfaces.png' | relative_url }})
+
+![Physical experiment: telemetry and reconstructed path]({{ '/assets/img/physical_telemetry.png' | relative_url }})
 
 ---
 
-## Repository / Resources
-- Code: *(link)*
-- Dataset/logs: *(link)*
-- Paper PDF: *(link)*
+## Links
+- Paper PDF: *(add link)*
+- Code / artefacts: *(add link)*
+- Supplementary video: *(add link)*
