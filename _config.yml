@@ -1,18 +1,15 @@
 title: "Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine"
-description: "Paper report: QFIE for mobile-robot navigation under NISQ constraints"
+description: "Project page + report (QFIE): IBM quantum offline inference for control-surface deployment under NISQ constraints."
 theme: minima
 
-# IMPORTANTISSIMO per project page:
-# se l'URL è https://TUOUSERNAME.github.io/qfie-paper-report/
-baseurl: "/qfie-paper-report"
-url: "https://andremorgh.github.io/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE/"
+# Domain principale (user page domain)
+url: "https://andremorgh.github.io"
 
-# Menu: compatibile con molte versioni di Minima
+# IMPORTANTISSIMO: per project page deve essere il nome repo
+baseurl: "/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
+
+# Pagine nel menu (scegli quelle che vuoi vedere)
 header_pages:
   - method.md
   - experiments.md
-
-minima:
-  nav_pages:
-    - method.md
-    - experiments.md
+  - results.md
