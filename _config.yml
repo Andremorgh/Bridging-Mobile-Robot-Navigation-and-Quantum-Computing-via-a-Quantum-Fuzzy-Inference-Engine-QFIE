@@ -1,0 +1,14 @@
+title: "Report – Paper XYZ"
+description: "Riassunto, analisi e risultati"
+theme: minima
+
+# Se il repo è https://TUOUSERNAME.github.io/paper-report/
+# allora baseurl deve essere /paper-report
+baseurl: "/paper-report"
+url: "https://TUOUSERNAME.github.io"
+
+# (opzionale) per controllare i link nel menu (vedi sezione menu)
+# Per Minima 2.x:
+header_pages:
+  - method.md
+  - results.md
