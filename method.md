@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Method (QFIE)"
+nav_order: 2
 ---
 
 ## 1) System overview (what runs where)

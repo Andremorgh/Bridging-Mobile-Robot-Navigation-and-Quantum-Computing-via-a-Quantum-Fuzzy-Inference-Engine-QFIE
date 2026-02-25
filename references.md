@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: "References & Links"
+nav_order: 5
 ---
 
 ## Paper

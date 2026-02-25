@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Discussion & Key Results"
+nav_order: 4
 ---
 
 ## 1) What the paper proves (and what it does not)

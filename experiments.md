@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Experiments & Results"
+nav_order: 3
 ---
 
 ## Overview (evaluation ladder)
