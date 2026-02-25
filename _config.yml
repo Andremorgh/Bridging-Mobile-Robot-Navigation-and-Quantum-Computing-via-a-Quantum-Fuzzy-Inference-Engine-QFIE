@@ -5,7 +5,7 @@ theme: minima
 # IMPORTANTISSIMO per project page:
 # se l'URL è https://TUOUSERNAME.github.io/qfie-paper-report/
 baseurl: "/qfie-paper-report"
-url: "https://github.com/Andremorgh/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
+url: "https://andremorgh.github.io/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE/"
 
 # Menu: compatibile con molte versioni di Minima
 header_pages:
