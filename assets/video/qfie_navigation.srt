@@ -1,0 +1,167 @@
+1
+00:00:00,000 --> 00:00:06,000
+In this work we present a quantum fuzzy controller for obstacle avoidance and goal directed navigation.
+
+2
+00:00:06,000 --> 00:00:12,000
+Here the rover navigates in our indoor arena, avoiding obstacles and visiting a sequence of waypoints.
+
+3
+00:00:12,000 --> 00:00:18,000
+The behavior you see is produced by an onboard lookup table based controller derived from offline quantum characterization.
+
+4
+00:00:18,000 --> 00:00:21,000
+The controller is decoupled into two inference engines.
+
+5
+00:00:21,000 --> 00:00:25,000
+One outputs linear velocity V, and the other outputs angular velocity omega.
+
+6
+00:00:25,000 --> 00:00:29,000
+Overall, the navigation policy is driven by three perceptual variables:
+
+7
+00:00:29,000 --> 00:00:33,000
+distance to goal error, orientation error, and obstacle bearing.
+
+8
+00:00:33,000 --> 00:00:37,000
+The obstacle information is extracted from a gated forward-looking region.
+
+9
+00:00:37,000 --> 00:00:41,000
+When the region is empty, the controller receives an explicit no-obstacle condition.
+
+10
+00:00:41,000 --> 00:00:44,000
+The rule base is designed to be interpretable and safety-oriented.
+
+11
+00:00:44,000 --> 00:00:47,000
+The limited number of fuzzy sets and rules reduces circuit width and depth,
+
+12
+00:00:47,000 --> 00:00:51,000
+helping keep the overall design NISQ feasible and more resilient to noise.
+
+13
+00:00:52,000 --> 00:00:55,000
+We implement the fuzzy controller with a quantum fuzzy inference engine,
+
+14
+00:00:55,000 --> 00:00:59,000
+compiling membership functions and rules into quantum circuits.
+
+15
+00:00:59,000 --> 00:01:03,000
+With three linguistic terms per variable, each inference engine fits in seven logical qubits.
+
+16
+00:01:03,000 --> 00:01:06,000
+Four for the inputs and three for a one-hot output register.
+
+17
+00:01:07,000 --> 00:01:11,000
+To run this controller on a robot, we cannot rely on cloud QPU calls inside the feedback loop.
+
+18
+00:01:12,000 --> 00:01:16,000
+A remote call includes queuing, network transfer, circuit execution, and IO overhead,
+
+19
+00:01:16,000 --> 00:01:23,000
+resulting in seconds of latency per control query, enough to block many control cycles at typical update rates.
+
+20
+00:01:24,000 --> 00:01:25,000
+For this reason, we keep the quantum component offline.
+
+21
+00:01:25,000 --> 00:01:31,000
+We use multiple quantum executions to sample the control surfaces, then deploy it online as a constant-time surrogate.
+
+22
+00:01:32,000 --> 00:01:39,000
+Concretely, we precompute two lookup tables and evaluate actions online through lightweight interpolation at a fixed controller rate.
+
+23
+00:01:39,000 --> 00:01:43,000
+To make offline characterization feasible within IBM QPU free access budgets,
+
+24
+00:01:43,000 --> 00:01:46,000
+we use a gradient-based adaptive sampling strategy.
+
+25
+00:01:46,000 --> 00:01:50,000
+This cuts the required quantum queries from 1800 to 62,
+
+26
+00:01:50,000 --> 00:01:54,000
+while preserving the switching topology of the control maps needed for reliable deployment.
+
+27
+00:01:55,000 --> 00:01:58,000
+We validate performance first in simulation across seven obstacle layouts,
+
+28
+00:01:58,000 --> 00:02:01,000
+with two waypoint sets each, for a total of 14 missions.
+
+29
+00:02:02,000 --> 00:02:07,000
+Each mission requires the rover to reach three waypoints in sequence and then return home, with a five centimeter tolerance.
+
+30
+00:02:08,000 --> 00:02:11,000
+The controller succeeds in 12 of the 14 missions.
+
+31
+00:02:11,000 --> 00:02:18,000
+The same overall outcome is observed whether the tables come from a noisy simulator or from a real quantum backend, IBM Torino.
+
+32
+00:02:18,000 --> 00:02:25,000
+Beyond success rate, trajectories obtained using tables from the noisy simulator and from the real quantum backend remain largely overlapping.
+
+33
+00:02:26,000 --> 00:02:35,000
+When differences appear, they mainly reflect benign local passage choices rather than a qualitative change in control logic.
+
+34
+00:02:36,000 --> 00:02:42,000
+The tests also show two typical failure patterns: oscillations when a goal sits near an obstacle, and getting trapped in sharp corners.
+
+35
+00:02:43,000 --> 00:02:50,000
+After simulation, we deploy the same control stack on a real four-wheeled rover in a 5 by 6 meter indoor laboratory arena.
+
+36
+00:02:50,000 --> 00:02:54,000
+We use waypoint sequences drawn from four candidate locations with a randomized visiting order.
+
+37
+00:02:55,000 --> 00:03:02,000
+We run multiple static trials, tighter docking with a 2.5 centimeter tolerance, and a dynamic obstacle injection stress test.
+
+38
+00:03:02,000 --> 00:03:08,000
+In summary, we design and validate a quantum algorithm for reactive robot navigation using a quantum fuzzy inference engine.
+
+39
+00:03:08,000 --> 00:03:13,000
+We preserve an interpretable auditable fuzzy rule base while implementing inference in a quantum circuit.
+
+40
+00:03:13,000 --> 00:03:19,000
+The core motivation is QFIE's provable exponential advantage as inputs and linguistic resolution grow.
+
+41
+00:03:19,000 --> 00:03:24,000
+Rather than claiming immediate runtime superiority in this intentionally low dimensional case study,
+
+42
+00:03:24,000 --> 00:03:30,000
+we establish a concrete engineering pathway for quantum-derived inference under NISQ constraints.
