@@ -1,39 +1,51 @@
-title: "QFIE Paper Report"
-description: "Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine — key method and results + video walkthrough."
+title: "PRISMA Lab · QFIE Paper Report"
+description: "Paper report with key method and results + video walkthrough (PRISMA Lab, DIETI, University of Naples Federico II)."
+
 url: "https://andremorgh.github.io"
 baseurl: "/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
 
-# Theme (recommended)
 remote_theme: just-the-docs/just-the-docs
-
 plugins:
   - jekyll-remote-theme
 
-# Just the Docs settings
+# Branding
+logo: "/assets/img/prismalab-logo.png"
+favicon_ico: "/assets/img/favicon.ico"   # (optional) add later; see note below
+color_scheme: prismalab
+
+# UX / navigation
 search_enabled: true
 heading_anchors: true
 back_to_top: true
 back_to_top_text: "Back to top"
 nav_sort: case_insensitive
 
-# Optional: show a small "Edit this page" link (nice for transparency)
+# Top-right links
+aux_links:
+  "PRISMA Lab (UniNa)":
+    - "https://prisma.dieti.unina.it/"
+  "DIETI":
+    - "https://www.dieti.unina.it/"
+  "University of Naples Federico II":
+    - "https://www.unina.it/"
+
+# Footer (short, factual, branded)
+footer_content: >
+  <strong>PRISMA Lab</strong> — Projects of Industrial and Service Robotics, Mechatronics and Automation (DIETI, University of Naples Federico II).
+  <span style="white-space:nowrap;">Design · Knowledge · Interaction · Impact</span>.
+  Via Claudio 21, 80125 Naples, Italy.
+
+# “Edit this page” convenience
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/Andremorgh/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
-# Optional: links in the top-right
-aux_links:
-  "GitHub repository":
-    - "https://github.com/Andremorgh/Bridging-Mobile-Robot-Navigation-and-Quantum-Computing-via-a-Quantum-Fuzzy-Inference-Engine-QFIE"
-
-# Keep Markdown predictable
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Avoid accidental publishing of junk files
 exclude:
   - README.md
   - Gemfile
