@@ -21,7 +21,7 @@ allowfullscreen></iframe> -->
 
 Option B (MP4 stored in the repo — recommended only for small files)
 <video controls width="900">
-  <source src="{{ '/assets/video/qfie_navigation.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
 </video>
 
 
