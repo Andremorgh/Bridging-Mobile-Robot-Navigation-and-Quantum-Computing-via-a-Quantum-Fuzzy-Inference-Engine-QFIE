@@ -1,0 +1,24 @@
+// _sass/color_schemes/prismalab.scss
+$color-scheme: prismalab !default;
+
+// Palette (from PRISMA Lab logo)
+$prisma-blue:    #294c64 !default;
+$prisma-blue-2:  #4c738c !default;
+$prisma-magenta: #a61647 !default;
+$prisma-lilac:   #e9e5f1 !default;
+
+// Core colours
+$body-background-color: #ffffff !default;
+$sidebar-color: rgba($prisma-lilac, 0.55) !default;
+$border-color: #e6e8ef !default;
+
+$body-text-color: #1f2a33 !default;
+$body-heading-color: $prisma-blue !default;
+
+$link-color: $prisma-blue !default;
+$nav-child-link-color: $prisma-blue-2 !default;
+
+$btn-primary-color: $prisma-magenta !default;
+
+$code-background-color: #f6f8fa !default;
+$search-result-preview-color: #4b5563 !default;

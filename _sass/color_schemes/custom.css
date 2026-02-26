@@ -1,0 +1,38 @@
+// Subtle PRISMA Lab polish
+$prisma-blue:   #294b64;
+$prisma-magenta:#a61648;
+
+// Make the sidebar logo readable and consistent
+.site-logo {
+  max-width: 220px;
+}
+
+// Slightly emphasise the site title
+.site-title {
+  color: $prisma-blue;
+  font-weight: 700;
+}
+
+// Links: add a gentle underline on hover
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+// Optional: a PRISMA “tag” you can reuse in pages
+.prisma-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(41, 75, 100, 0.25);
+  background: rgba(224, 218, 232, 0.35);
+  color: $prisma-blue;
+}
+
+// Optional: a highlighted callout style (no plugin needed)
+.prisma-callout {
+  border-left: 4px solid $prisma-magenta;
+  padding: 0.75rem 1rem;
+  background: rgba(224, 218, 232, 0.25);
+  border-radius: 8px;
+}
