@@ -1,0 +1,23 @@
+// assets/css/color_schemes/prismalab.scss
+$prisma-blue:    #294c64;
+$prisma-blue-2:  #4c738c;
+$prisma-magenta: #a61647;
+$prisma-lilac:   #e9e5f1;
+$prisma-grey:    #a5b1c1;
+$prisma-rose:    #c36384;
+
+// Core theme variables (light-based scheme)
+$body-background-color: #ffffff;
+$sidebar-color: rgba($prisma-lilac, 0.55);
+$border-color: #e6e8ef;
+
+$body-text-color: #1f2a33;
+$body-heading-color: $prisma-blue;
+
+$link-color: $prisma-blue;
+$nav-child-link-color: $prisma-blue-2;
+
+$btn-primary-color: $prisma-magenta;
+
+$code-background-color: #f6f8fa;
+$search-result-preview-color: #4b5563;
