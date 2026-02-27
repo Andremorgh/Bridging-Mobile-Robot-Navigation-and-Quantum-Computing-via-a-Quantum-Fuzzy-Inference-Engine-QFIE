@@ -22,20 +22,17 @@ $prisma-magenta:#a61648;
   align-items: center;     /* keep things vertically centred */
 }
 
-/* 2) Remove constraints on the logo container */
+//* Keep the logo from shrinking inside the header */
 .site-header .site-logo {
-  max-width: none;
-  height: auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  flex: 0 0 auto;      /* do not shrink */
+  min-width: 220px;    /* reserve real space */
 }
 
-/* 3) Size the logo image sanely (avoid 250px unless you really want a big header) */
+/* Force the image to render at a readable size */
 .site-header .site-logo img {
-  height: 96px;           /* prova 80–120; 250px è enorme */
+  height: 96px;        /* 80–120 works well */
   width: auto;
-  max-width: 100%;
-  display: block;
+  image-rendering: auto;
 }
 
 /* 4) Optional: tighten the header spacing so the tall header doesn't waste space */
