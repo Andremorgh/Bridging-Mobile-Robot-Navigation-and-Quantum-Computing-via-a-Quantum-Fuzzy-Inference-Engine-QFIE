@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: "Method (QFIE)"
 nav_order: 2
@@ -89,4 +89,4 @@ If you only remember one method-related takeaway, it should be this:
 
 For the quantitative outcomes (noise impact, adaptive sampling savings, simulation success rate, real-robot runs), see **Experiments**.
 
-➡️ Go to: [Experiments]({{ '/experiments.html' | relative_url }})
+➡️ Go to: [Experiments]({{ '/experiments.html' | relative_url }}) -->

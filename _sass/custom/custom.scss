@@ -4,7 +4,7 @@ $prisma-magenta:#a61648;
 
 // Make the sidebar logo readable and consistent
 .site-logo {
-  max-width: 220px;
+  max-width: 500px;
 }
 
 // Slightly emphasise the site title
@@ -13,9 +13,17 @@ $prisma-magenta:#a61648;
   font-weight: 700;
 }
 
-// Links: add a gentle underline on hover
-a:hover {
-  text-decoration-thickness: 2px;
+/* PRISMA Lab link styling */
+a,
+.aux-nav a,
+.nav-list a {
+  color: #294C64;
+}
+
+a:hover,
+.aux-nav a:hover,
+.nav-list a:hover {
+  color: #A61647;
 }
 
 // Optional: a PRISMA “tag” you can reuse in pages
@@ -35,4 +43,12 @@ a:hover {
   padding: 0.75rem 1rem;
   background: rgba(224, 218, 232, 0.25);
   border-radius: 8px;
+}
+
+/* Active nav item */
+.nav-list .nav-list-item .nav-list-link.active {
+  font-weight: 700;
+  background: rgba(224, 218, 232, 0.35);
+  border-left: 4px solid #A61647;
+  padding-left: 0.75rem;
 }

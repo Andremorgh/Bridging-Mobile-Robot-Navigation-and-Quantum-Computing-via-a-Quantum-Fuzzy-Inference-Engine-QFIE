@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: "Simulations and Experiments"
 nav_order: 3
@@ -114,4 +114,4 @@ A dynamic obstacle is introduced during the run; the behaviour remains stable an
 ## Where to go next
 - For the pipeline and why the offline–online split is essential, see:  
   ➡️ [Method (QFIE)]({{ '/method.html' | relative_url }})
-- For a guided narrative with visuals, start from the video on the homepage.
+- For a guided narrative with visuals, start from the video on the homepage. -->
