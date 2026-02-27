@@ -2,13 +2,24 @@
 $prisma-blue:   #294b64;
 $prisma-magenta:#a61648;
 
+/* Wider content column (Just the Docs) */
+.main-content .page-content {
+  max-width: 1100px;   /* prova 1100–1300 */
+}
+
+/* Optional: slightly reduce side padding so it feels wider */
+.main-content .page-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 /* Bigger sidebar logo (Just the Docs) */
 .site-header .site-logo {
   max-width: none;            /* remove theme cap */
 }
 
 .site-header .site-logo img {
-  height: 64px;               /* increase as you like: 56–80px */
+  height: 150px;               /* increase as you like: 56–80px */
   width: auto;
   max-width: 100%;
   display: block;
