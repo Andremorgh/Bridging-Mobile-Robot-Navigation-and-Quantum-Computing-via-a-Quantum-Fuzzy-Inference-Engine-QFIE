@@ -1,10 +1,38 @@
-<!-- ---
+---
 layout: default
 title: "Simulations and Experiments"
 nav_order: 3
 ---
 
-## Overview (evaluation ladder)
+<h2 id="simulation-gallery">Simulation gallery (looping clips)</h2>
+
+<div class="sim-grid">
+  <figure class="sim-item">
+    <video class="sim-vid" autoplay muted loop playsinline controls preload="metadata">
+      <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>Scenario 01</figcaption>
+  </figure>
+
+  <figure class="sim-item">
+    <video class="sim-vid" autoplay muted loop playsinline controls preload="metadata">
+      <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>Scenario 02</figcaption>
+  </figure>
+
+  <!-- …repeat up to sim14… -->
+
+  <figure class="sim-item">
+    <video class="sim-vid" autoplay muted loop playsinline controls preload="metadata">
+      <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <figcaption>Scenario 14</figcaption>
+  </figure>
+</div>
+
+
+<!-- ## Overview (evaluation ladder)
 The paper validates QFIE progressively:
 
 1. **Control-surface characterisation** (ideal vs device-like noise; then real QPU surfaces).

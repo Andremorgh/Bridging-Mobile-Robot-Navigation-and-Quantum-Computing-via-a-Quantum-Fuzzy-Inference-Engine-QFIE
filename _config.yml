@@ -10,7 +10,7 @@ plugins:
 
 # Branding
 logo: "/assets/img/prismalab-logo.png"
-favicon_ico: "/assets/img/favicon.ico"   # (optional) add later; see note below
+favicon_ico: "/assets/img/prismalab-icon.ico"   # (optional) add later; see note below
 color_scheme: prismalab
 
 # UX / navigation
