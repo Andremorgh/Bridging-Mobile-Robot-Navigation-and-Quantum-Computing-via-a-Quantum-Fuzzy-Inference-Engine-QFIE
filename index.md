@@ -26,23 +26,25 @@ title="QFIE Paper Report – Video Overview"
 frameborder="0"
 allowfullscreen></iframe> -->
 
-Option B (MP4 stored in the repo — recommended only for small files)
-<video controls width="900">
-  <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
+<!-- Option B (MP4 stored in the repo — recommended only for small files) -->
+<div class="video-wrap" id="video-overview">
+  <video controls playsinline preload="metadata">
+    <source src="{{ '/assets/video/qfie_navigation_sub.mp4' | relative_url }}" type="video/mp4">
     <track label="English" kind="subtitles" srclang="en"
-         src="{{ '/assets/video/qfie_navigation.vtt' | relative_url }}" default>
-</video>
+           src="{{ '/assets/video/qfie_navigation.vtt' | relative_url }}" default>
+  </video>
+</div>
 
 ---
 
-## Abstract (from the paper)
+## Abstract 
 Quantum computing holds the theoretical potential to transcend classical limitations in processing high-dimensional state spaces and solving combinatorial optimisation problems, which are central to many fundamental challenges in robotics. However, its practical integration into robotics remains challenging, particularly under Noisy Intermediate-Scale Quantum (NISQ) constraints and the conceptual shift imposed by quantum programming models. In this work, we investigate the Quantum Fuzzy Inference Engine (QFIE) as an interpretable and deployment-oriented framework for embedding quantum inference within a mobile-robot navigation stack. QFIE leverages fuzzy logic as a human-readable interface between quantum computation and classical control design, enabling structured policy synthesis while preserving compatibility with existing robotic architectures. Although present wall-clock execution times are dominated by cloud access latency and hardware overhead, QFIE retains a provable exponential advantage in computational complexity over its classical fuzzy inference counterpart. Accordingly, rather than claiming immediate runtime superiority in this low-dimensional instantiation, this work establishes a concrete engineering and validation pathway for complexity-scalable quantum-derived inference. Quantum inference is therefore executed offline on a superconducting IBM backend to characterise the control surfaces, which are subsequently deployed onboard to meet closed-loop actuation constraints.
 
 Simulation and real-world experiments on a four-wheeled rover demonstrate that the resulting controller can be reliably integrated into a physical robotic platform despite current NISQ limitations. To the best of our knowledge, this represents one of the first demonstrations of quantum computations executed on real IBM quantum hardware being experimentally integrated into the control pipeline of a real mobile robot.
 
 ---
 
-## What this report focuses on (high signal only)
+## What this report focuses on 
 - The **engineering rationale**: why quantum must be offline today, and how LUT deployment preserves real-time control.
 - The **minimum method** needed to understand the results (QFIE → surfaces → LUT).
 - The **results that matter**: noise impact on surfaces, adaptive sampling savings, simulation success, real-robot validation.
@@ -50,7 +52,7 @@ Simulation and real-world experiments on a four-wheeled rover demonstrate that t
 
 ---
 
-## Results at a glance (key numbers)
+## Results at a glance 
 
 | Block | What it demonstrates | Headline result |
 |---|---|---|

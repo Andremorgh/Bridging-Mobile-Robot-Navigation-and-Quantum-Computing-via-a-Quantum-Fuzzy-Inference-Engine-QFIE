@@ -2,9 +2,23 @@
 $prisma-blue:   #294b64;
 $prisma-magenta:#a61648;
 
-// Make the sidebar logo readable and consistent
-.site-logo {
-  max-width: 1500px;
+/* Bigger sidebar logo (Just the Docs) */
+.site-header .site-logo {
+  max-width: none;            /* remove theme cap */
+}
+
+.site-header .site-logo img {
+  height: 64px;               /* increase as you like: 56–80px */
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* Slightly bigger on wider screens */
+@media (min-width: 50rem) {
+  .site-header .site-logo img {
+    height: 72px;
+  }
 }
 
 // Slightly emphasise the site title
@@ -51,4 +65,20 @@ a:hover,
   background: rgba(224, 218, 232, 0.35);
   border-left: 4px solid #A61647;
   padding-left: 0.75rem;
+}
+
+/* Responsive self-hosted video (never overflows content column) */
+.video-wrap {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
