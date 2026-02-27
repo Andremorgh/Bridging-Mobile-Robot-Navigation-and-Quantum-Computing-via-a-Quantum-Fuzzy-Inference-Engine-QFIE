@@ -19,7 +19,7 @@ $prisma-magenta:#a61648;
 }
 
 .site-header .site-logo img {
-  height: 150px;               /* increase as you like: 56–80px */
+  height: 250px;               /* increase as you like: 56–80px */
   width: auto;
   max-width: 100%;
   display: block;
@@ -28,7 +28,7 @@ $prisma-magenta:#a61648;
 /* Slightly bigger on wider screens */
 @media (min-width: 50rem) {
   .site-header .site-logo img {
-    height: 72px;
+    height: 250px;
   }
 }
 
@@ -130,4 +130,40 @@ a:hover,
 
 @media (max-width: 800px) {
   .sim-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* 3-across looping simulation gallery */
+.sim-grid.sim-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: 0.75rem 0 1.75rem;
+}
+
+.sim-item { margin: 0; }
+
+.sim-vid {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border-radius: 10px;
+  background: #000;
+  object-fit: cover;
+  border: 1px solid rgba(41, 76, 100, 0.18);
+}
+
+.sim-item figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: #4c738c;
+}
+
+/* Responsive: 2 columns then 1 column */
+@media (max-width: 900px) {
+  .sim-grid.sim-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .sim-grid.sim-grid-3 { grid-template-columns: 1fr; }
 }

@@ -14,7 +14,7 @@ nav_order: 3
 </p>
 
 <h3>Noisy backend (N) — SIM01 to SIM14</h3>
-<div class="sim-grid sim-grid-7">
+<div class="sim-grid sim-grid-3">
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
       <source src="{{ '/assets/video/simulation/SIM01/SIM01_N.mp4' | relative_url }}" type="video/mp4">
