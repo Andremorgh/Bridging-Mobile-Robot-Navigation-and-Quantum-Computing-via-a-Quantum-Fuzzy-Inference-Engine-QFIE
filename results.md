@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: "Discussion & Key Results"
 nav_order: 4
 ---
 
-## 1) What the paper proves (and what it does not)
+<!-- ## 1) What the paper proves (and what it does not)
 ### What is established
 - A **quantum-derived**, interpretable navigation controller can be **integrated end-to-end** into a real mobile robot by running quantum inference **offline** and deploying **control surfaces as LUTs** onboard.
 - With careful surface reconstruction (notably **adaptive sampling**), the approach is **practically feasible** under present-day NISQ/cloud access constraints.
@@ -98,4 +98,4 @@ If you include figures on this page, I recommend:
 
 ![Real-QPU surfaces]({{ '/assets/img/real_qpu_surfaces.png' | relative_url }})
 
-![Physical run telemetry]({{ '/assets/img/physical_telemetry.png' | relative_url }})
+![Physical run telemetry]({{ '/assets/img/physical_telemetry.png' | relative_url }}) --> -->

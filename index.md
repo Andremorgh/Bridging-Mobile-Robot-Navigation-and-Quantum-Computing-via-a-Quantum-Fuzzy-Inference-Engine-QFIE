@@ -6,19 +6,19 @@ nav_order: 1
 
 # Bridging Mobile Robot Navigation and Quantum Computing via a Quantum Fuzzy Inference Engine (QFIE)
 
-<div class="prisma-callout">
+<!-- <div class="prisma-callout">
   <strong>Watch first:</strong> my video walkthrough (method + simulations + real rover).
   <br />
   <a class="btn btn-primary" href="#video-overview">Watch the video</a>
   <a class="btn" href="{{ '/experiments.html' | relative_url }}">Key results</a>
-</div>
+</div> -->
 
 **Core message:** QFIE integrates *quantum-derived inference* into a mobile-robot navigation stack **without** executing quantum hardware in the closed loop. Quantum inference is run **offline** to characterise **control surfaces**; these are then deployed onboard as **lookup tables (LUTs)** that can be queried in real time.
 
----
+<!-- ---
 
 ## Video overview (method + simulations + real-robot experiments)
-> Replace `ID_VIDEO` with your YouTube (or Vimeo) embed ID/link.
+> Replace `ID_VIDEO` with your YouTube (or Vimeo) embed ID/link. -->
 
 <!-- <iframe width="900" height="506"
 src="https://www.youtube.com/embed/ID_VIDEO"
