@@ -2,17 +2,25 @@
 $prisma-blue:   #294b64;
 $prisma-magenta:#a61648;
 
-/* Wider content column (Just the Docs) */
-.main-content .page-content {
-  max-width: 2500px;   /* prova 1100–1300 */
+/* Full-width content (occupies all available width next to the sidebar) */
+.main-content,
+.main-content .page-content,
+.main-content-wrap {
+  max-width: none !important;
+  width: 100% !important;
 }
 
-/* Optional: slightly reduce side padding so it feels wider */
+/* Remove extra horizontal constraints/padding */
 .main-content .page-content {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
+/* Optional: if your layout still looks "boxed", remove any container max-width */
+.page-content,
+.page-content-wrap {
+  max-width: none !important;
+}
 /* --- PRISMA header: make the whole header taller --- */
 
 /* 1) Increase header height and allow it to grow */
@@ -49,7 +57,7 @@ $prisma-magenta:#a61648;
 /* Slightly bigger on wider screens */
 @media (min-width: 50rem) {
   .site-header .site-logo img {
-    height: 250px;
+    height: 220px;
   }
 }
 
@@ -166,7 +174,7 @@ a:hover,
 
 .sim-vid {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
   display: block;
   border-radius: 10px;
   background: #000;
@@ -189,22 +197,26 @@ a:hover,
   .sim-grid.sim-grid-3 { grid-template-columns: 1fr; }
 }
 
-/* Full-width content (occupies all available width next to the sidebar) */
+/* Force all main containers to be full width (next to sidebar) */
+.main,
+.main-header,
+.main-content-wrap,
 .main-content,
-.main-content .page-content,
-.main-content-wrap {
+.page-content,
+.page-content-wrap {
   max-width: none !important;
   width: 100% !important;
 }
 
-/* Remove extra horizontal constraints/padding */
-.main-content .page-content {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+/* Remove centring margins that keep things "boxed" */
+.main-content-wrap,
+.page-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-/* Optional: if your layout still looks "boxed", remove any container max-width */
-.page-content,
-.page-content-wrap {
-  max-width: none !important;
+/* Keep sensible padding */
+.main-content .page-content {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }

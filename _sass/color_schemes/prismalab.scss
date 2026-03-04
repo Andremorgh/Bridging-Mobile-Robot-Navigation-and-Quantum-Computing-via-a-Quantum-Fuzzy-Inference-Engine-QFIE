@@ -1,6 +1,12 @@
 // _sass/color_schemes/prismalab.scss
 $color-scheme: prismalab !default;
 
+/* Make Just the Docs content area full width */
+$content-width: 100% !default;
+
+/* Optional: make sidebar narrower to gain more content width */
+$nav-width: 260px !default;
+
 // Palette (from PRISMA Lab logo)
 $prisma-blue:    #294c64 !default;
 $prisma-blue-2:  #4c738c !default;
