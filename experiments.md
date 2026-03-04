@@ -17,98 +17,98 @@ nav_order: 3
 <div class="sim-grid sim-grid-3">
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM01/SIM01_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM01/SIM01_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM01 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM02/SIM02_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM02/SIM02_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM02 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM03/SIM03_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM03/SIM03_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM03 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM04/SIM04_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM04/SIM04_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM04 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM05/SIM05_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM05/SIM05_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM05 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM06/SIM06_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM06/SIM06_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM06 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM07/SIM07_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM07/SIM07_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM07 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM08/SIM08_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM08/SIM08_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM08 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM09/SIM09_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM09/SIM09_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM09 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM10/SIM10_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM10/SIM10_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM10 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM11/SIM11_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM11/SIM11_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM11 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM12/SIM12_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM12/SIM12_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM12 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM13/SIM13_N.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM13/SIM13_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM13 · N</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM14/SIM14_N.mkv' | relative_url }}" type="mkv">
+      <source src="{{ '/assets/video/simulation/SIM14/SIM14_N.mp4' | relative_url }}" type="mp4">
     </video>
     <figcaption>SIM14 · N</figcaption>
   </figure>
@@ -118,98 +118,98 @@ nav_order: 3
 <div class="sim-grid sim-grid-3">
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM01/SIM01_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM01/SIM01_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM01 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM02/SIM02_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM02/SIM02_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM02 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM03/SIM03_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM03/SIM03_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM03 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM04/SIM04_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM04/SIM04_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM04 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM05/SIM05_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM05/SIM05_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM05 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM06/SIM06_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM06/SIM06_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM06 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM07/SIM07_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM07/SIM07_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM07 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM08/SIM08_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM08/SIM08_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM08 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM09/SIM09_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM09/SIM09_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM09 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM10/SIM10_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM10/SIM10_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM10 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM11/SIM11_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM11/SIM11_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM11 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM12/SIM12_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM12/SIM12_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM12 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM13/SIM13_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM13/SIM13_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM13 · Q</figcaption>
   </figure>
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM14/SIM14_Q.mkv' | relative_url }}" type="video/mkv">
+      <source src="{{ '/assets/video/simulation/SIM14/SIM14_Q.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM14 · Q</figcaption>
   </figure>

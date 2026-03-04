@@ -4,7 +4,7 @@ $prisma-magenta:#a61648;
 
 /* Wider content column (Just the Docs) */
 .main-content .page-content {
-  max-width: 1500px;   /* prova 1100–1300 */
+  max-width: 2500px;   /* prova 1100–1300 */
 }
 
 /* Optional: slightly reduce side padding so it feels wider */
@@ -25,7 +25,7 @@ $prisma-magenta:#a61648;
 //* Keep the logo from shrinking inside the header */
 .site-header .site-logo {
   flex: 0 0 auto;      /* do not shrink */
-  min-width: 220px;    /* reserve real space */
+  min-width: 150px;    /* reserve real space */
 }
 
 /* Force the image to render at a readable size */
