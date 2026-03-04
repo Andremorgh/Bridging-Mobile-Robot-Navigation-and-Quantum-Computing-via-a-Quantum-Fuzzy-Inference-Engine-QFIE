@@ -25,12 +25,12 @@ $prisma-magenta:#a61648;
 //* Keep the logo from shrinking inside the header */
 .site-header .site-logo {
   flex: 0 0 auto;      /* do not shrink */
-  min-width: 150px;    /* reserve real space */
+  min-width: 220px;    /* reserve real space */
 }
 
 /* Force the image to render at a readable size */
 .site-header .site-logo img {
-  height: 320px;        /* 80–120 works well */
+  height: 250px;        /* 80–120 works well */
   width: auto;
   image-rendering: auto;
 }
@@ -187,4 +187,24 @@ a:hover,
 
 @media (max-width: 560px) {
   .sim-grid.sim-grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Full-width content (occupies all available width next to the sidebar) */
+.main-content,
+.main-content .page-content,
+.main-content-wrap {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Remove extra horizontal constraints/padding */
+.main-content .page-content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Optional: if your layout still looks "boxed", remove any container max-width */
+.page-content,
+.page-content-wrap {
+  max-width: none !important;
 }

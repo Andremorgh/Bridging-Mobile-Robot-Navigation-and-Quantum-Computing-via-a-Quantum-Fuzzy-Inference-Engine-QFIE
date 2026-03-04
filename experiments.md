@@ -215,14 +215,6 @@ nav_order: 3
   </figure>
 </div>
 
-<div class="video-wrap" id="video-overview">
-  <video controls playsinline preload="metadata">
-    <source src="{{ '/assets/video/simulation/SIM14/SIM14_Q.mp4' | relative_url }}" type="video/mp4">
-    <track label="English" kind="subtitles" srclang="en"
-           src="{{ '/assets/video/qfie_navigation.vtt' | relative_url }}" default>
-  </video>
-</div>
-
 
 <!-- ## Overview (evaluation ladder)
 The paper validates QFIE progressively:
