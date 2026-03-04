@@ -197,26 +197,62 @@ a:hover,
   .sim-grid.sim-grid-3 { grid-template-columns: 1fr; }
 }
 
-/* Force all main containers to be full width (next to sidebar) */
-.main,
-.main-header,
-.main-content-wrap,
-.main-content,
-.page-content,
-.page-content-wrap {
-  max-width: none !important;
-  width: 100% !important;
-}
+/* --- Layout: sidebar flush-left + main fills remaining width --- */
+$prisma-nav-width: 320px;
 
-/* Remove centring margins that keep things "boxed" */
-.main-content-wrap,
-.page-content {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+@media (min-width: 50rem) {
+  /* Remove any global centring/boxing */
+  .site-wrap {
+    max-width: none !important;
+    margin: 0 !important;
+  }
 
-/* Keep sensible padding */
-.main-content .page-content {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  /* Sidebar pinned to the left edge */
+  .side-bar {
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+
+    width: $prisma-nav-width !important;
+    margin: 0 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Main area starts exactly after the sidebar and fills the rest */
+  .main {
+    margin-left: $prisma-nav-width !important;
+    width: calc(100% - #{$prisma-nav-width}) !important;
+    max-width: none !important;
+  }
+
+  /* Kill remaining max-width constraints inside the main column */
+  .main-header,
+  .main-content-wrap,
+  .main-content,
+  .page-content,
+  .page-content-wrap {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  /* Keep reasonable padding inside the content column */
+  .main-content .page-content {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* Align sidebar content to the left (avoid “floating in the middle”) */
+  .side-bar .site-header,
+  .side-bar .site-nav {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .side-bar .nav-list,
+  .side-bar .site-title {
+    width: 100% !important;
+  }
 }

@@ -108,7 +108,7 @@ nav_order: 3
 
   <figure class="sim-item">
     <video class="sim-vid" autoplay muted loop playsinline preload="metadata">
-      <source src="{{ '/assets/video/simulation/SIM14/SIM14_N.mp4' | relative_url }}" type="mp4">
+      <source src="{{ '/assets/video/simulation/SIM14/SIM14_N.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption>SIM14 · N</figcaption>
   </figure>
